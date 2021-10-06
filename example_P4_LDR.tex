@@ -1,0 +1,99 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+\usepackage{fourier}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow, array}
+\usepackage{enumerate}
+\usepackage[left=2.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{quotchap}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{chemfig}
+\usepackage{pgfplots}
+%\usepackage{color}      % Definición de colores
+%    \hypersetup{colorlinks=true, linkcolor=[rgb]{0,0,1}, citecolor=[rgb]{0,0,1}}
+\usepackage{xcolor}		% Permite definir un color para utilizarlo dentro del documento.
+%    \definecolor{gris}{RGB}{70,70,70}	    % Definiendo el color gris
+%    \definecolor{negro}{RGB}{40,40,40}		% Definiendo el color negro
+
+%%%%%%%% Modificación de los espacios de los títulos de secciones %%%%%%%%%%
+\usepackage{titlesec}		% Permite reconfigurar  los títulos de las secciones y subsecciones
+%% =============================================================================
+%%  OTRA COSA QUE NO SEAN PAKETES
+%% =============================================================================
+\pagestyle{fancy}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4}
+\fancyhf{}
+\rhead{I5839 D-03}
+\lhead{Laboratorio de reactores(2020B)}
+\rfoot{\thepage}
+%\renewcommand\thesection{\Roman{section}}	% Numeración romana en las secciones
+%\renewcommand\thesubsection{\Roman{subsection}}		% Numeración romana en las subsecciones
+\titlespacing*{\section}{0pt}{2.5mm}{0mm}	% Espaciado del título {espacio izquierdo}{arriba del título}{abajo del título}
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{}
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{}
+%\newcommand{\colorhrule}[3]{\begingroup\color{#1}\rule{#2}{#3}\endgroup}
+
+\setlength{\intextsep}{1mm} % Distancia superior e inferior en objetos flotantes
+\setlength{\columnsep}{5mm} % Separación entre columnas del documento
+\spanishdecimal{.}
+%% =============================================================================
+%%    INICIO DEL DOCUMENTO
+%% =============================================================================
+\begin{document}
+
+\renewcommand{\tablename}{Tabla}
+\thispagestyle{empty}
+%======================
+%       PORTADA
+%======================
+\sloppy     % Evita que las palabras se corten al saltar de línea.
+\begin{center}
+  \begin{tabular}{cc}
+
+\multirow{2}{3.5cm}{\includegraphics[width=3cm]{Figuras/udgn.eps}}	& \huge{\textsc{\textbf{Universidad de Guadalajara}}}\\
+ & \scriptsize{\textsc{CENTRO UNIVERSITARIO DE CIENCIAS EXACTAS E INGENIERÍAS}}\\[5mm]
+ & \Large{\textsf{\textbf{Práctica 4. Distribución de tiempos de residencia
+}}}\\
+ & \\ \vspace{5mm}
+ & \small{\textsf{Alejandro Leviatán Gallifrey  [213521903]}}\\
+ & \small{\textsc{Ingeniería Química $|$  - Laboratorio de reactores Químicos}}\\
+ & \today\\
+ & \small{\textit{Profersor:}}  \textbf{\small{Alejandro Nava Tellez }}\\
+  \end{tabular}
+\end{center}
+
+%\begin{center}
+ % \colorhrule{negro}{16.5cm}{1.2pt}
+%\end{center}
+
+\rule{\linewidth}{0.75mm}
+
+\tableofcontents
+\section{Objetivos}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{Figuras/Curva_Calibracion.pdf}
+	\caption{Ejemplo}
+	\label{fig:Curva_calibracion}
+	
+\end{figure}
+
+
+
+\end{document}
