@@ -53,3 +53,6 @@ plt.ylabel('E (1/min)')
 plt.xlabel('Tiempo (min)')
 plt.grid(True)
 plt.savefig('fig_Curva_Et.pdf')
+
+
+
